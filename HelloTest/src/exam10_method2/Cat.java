@@ -11,7 +11,7 @@ public class Cat {
 		
 	}
 	
-	//파라미터 들어있는 생성자 생
+	//파라미터 들어있는 생성자 생성   
 	public Cat(String name, int age, String gender) {
 		this.name = name;
 		this.age = age;
@@ -41,7 +41,5 @@ public class Cat {
 	public String getGender() { 
 		return gender; 
 	}
-	
-	
 
 }

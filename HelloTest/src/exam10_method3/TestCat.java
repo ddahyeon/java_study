@@ -1,4 +1,4 @@
-package exam10_method2;
+package exam10_method3;
 
 public class TestCat {
 
@@ -6,10 +6,7 @@ public class TestCat {
 		// 키티, 2살, 암컷 객체생성하기
 		Cat c = new Cat("키티", 2, "암컷");
 		
-		//c.name="다니엘";  접근불가함 -> 캡슐화 해놔서 -> 매서드를 활용해 인스턴스 변수 수정, 조회 등의 작업 
-		c.setName("다니엘"); // 수정 역할 
-		c.setAge(4);
-		c.setGender("수컷");
+		c.setAge(30);
 		
 		String name=c.getName(); // 조회 역
 		int age=c.getAge();
