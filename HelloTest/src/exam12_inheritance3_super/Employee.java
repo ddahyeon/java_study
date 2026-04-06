@@ -1,4 +1,4 @@
-package exam12_inheritance2_After;
+package exam12_inheritance3_super;
 
 public class Employee {  // 자동으로 extends object가 지정됨  
 	String name;
@@ -9,7 +9,7 @@ public class Employee {  // 자동으로 extends object가 지정됨
 	}
 
 	public Employee(String name, int salary) {
-		System.out.println("Employee ");
+		System.out.println("Employee 생성자");
 		this.name = name;
 		this.salary = salary;
 	}
