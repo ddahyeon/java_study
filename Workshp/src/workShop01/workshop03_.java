@@ -1,4 +1,5 @@
 package workShop01;
+import java.util.Scanner;
 
 public class workshop03_ {
 
@@ -44,18 +45,67 @@ public class workshop03_ {
 	*/
 		
 		//문제2 1부터 20까지의 정수 중에서 2의 배수가 아니고 3의 배수가 아닌 수의 총합을 구하시오.
-		int a=0;
-		int b=0;
-		int sum=0;
+		/*int sum=0;
 		for(int i=0; i<=20; i++) {
-			if(i%2!=0) {
-				a+=i;
-			}else if(i%3!=0) {
-				b+=1;
-			}else {
-				sum=a+b;
+			if(i%2!=0 && i%3!=0) {
+				sum+=i;
 			}
 		}
 		System.out.println(sum);
-	}
+		*/
+		
+		//문제3. for문을 while 문으로 변경 
+		
+		/*
+		int i = 0; 
+		while (i<=10) {
+			int j = 0; 
+			while (j<=i) {
+			System.out.print("*");
+			j++;
+			}
+			System.out.println();
+			i++;
+		}
+		
+		for(int i=0; i<=10; i++) {
+			for(int j=0; j<=i; j++) {
+			System.out.print("*");
+			}
+			System.out.println();
+			}
+		*/
+		
+		
+		//문제4. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하는 프로그램을 작성하시오
+		/*
+		for(int i=1; i<=6; i++) {
+			for(int j=1; j<=6; j++) {
+				if(i+j==6) {
+					System.out.printf("%d+%d=%d\n",i,j,i+j);
+				}
+			}
+		}
+		
+		*/
+		
+		//문제5. Scanner 이용하여 임의의 정수값을 입력받고, 입력 받은 정수값만큼 1부터 반복한다. 이때 짝수값의 총합과 평균값을 출력하시오.
+		/*
+		Scanner scan = new Scanner(System.in);
+		System.out.println("정수를 입력하시오");
+		int num=scan.nextInt();
+		int count =0;
+		int sum=0;
+		for (int i=1; i<=num; i++) {
+			if(i%2==0) {
+				count+=1;
+				sum+=i;
+			}
+		}System.out.printf("총합:%d\n평균값:%d", sum, sum/count);
+		*/
+		
+		//문제6. 세 개의 주사위를 던졌을 때, 눈의 곱이 3의 배수인 값을 출력하는 프로그램을 작성하시오
+		
+		
+	}	
 }
