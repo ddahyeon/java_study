@@ -17,7 +17,7 @@ public class variableTest04 {
 		//블럭이 다르면 변수명 동일해도 
 		{
 			int age =20;
-			System.out.prtinln(age);
+			System.out.println(age);
 		}
 		
 		//system.out.println(age);

@@ -13,7 +13,7 @@ public class variableTest02 {
 		int n3; // 변수 선언만 하지 말고 초기화까지 필수 !
 		
 		
-		System.out.println(n1);
+		System.out.println(n);
 		System.out.println(n2);
 		System.out.println(n3);
 		
