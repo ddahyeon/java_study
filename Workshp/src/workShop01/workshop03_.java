@@ -105,7 +105,64 @@ public class workshop03_ {
 		*/
 		
 		//문제6. 세 개의 주사위를 던졌을 때, 눈의 곱이 3의 배수인 값을 출력하는 프로그램을 작성하시오
+		/*
+		int total=0;
+		for (int i=1; i<=6; i++) {
+			for(int j=1; j<=6; j++) {
+				for(int x=1; x<=6; x++) {
+					if((i*j*x)%3 == 0) {
+						total = i*j*x;
+						System.out.printf("%d * %d * %d = %d\n", i,j,x,total);
+					}
+				}
+			}
+		}
+		*/
+		
+		//문제7. 1부터 100까지 더하는 프로그램을 작성 한다. 단, Scanner로 1자리 정수형 데이터를 입력 받아 입력 받은 수의 배수만 더한다.
+		/*
+		Scanner scan = new Scanner(System.in);
+		System.out.println("한자리 정수값을 입력하시오");
+		int num = scan.nextInt();
+		int sum = 0;
+		String result = "";
+		
+		for(int i=num; i<=100; i++) {
+			if(i%num==0) {
+				sum+=i;
+			}
+			// 마지막 숫자인지 체크
+	        if(i + num > 100) {
+	            result += i;
+	        } else {
+	            result += i + "+";
+	        }
+		}	System.out.println(result + "\n" + " = " + sum); 
+		*/
+		
+		//문제8. 1부터 100까지 반복하면서 3의 배수는 foo, 5의 배수는 bar , 7의 배수는 baz 값을 출력하는 프로그램을 작성하시오
+		/*
+		 for(int i = 1; i <= 100; i++) {
+		 
+		    System.out.print(i);
+
+		    if(i % 3 == 0) {
+		        System.out.print(" foo");
+		    }
+		    if(i % 5 == 0) {
+		        System.out.print(" bar");
+		    }
+		    if(i % 7 == 0) {
+		        System.out.print(" baz");
+		    }
+
+		    System.out.println(); // 줄바꿈
+		}
+		*/
+		
+		//문제9. Scanner 클래스를 사용하여 키보드로 세 개의 정수값을 입력 받아서 최대값과 최소값을 구하는 코드 작업. 단, if 문 사용할 것
 		
 		
-	}	
+	}
 }
+
