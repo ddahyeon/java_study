@@ -3,17 +3,21 @@ package exam20_collection_API;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 public class HashSetTest {
 
 	public static void main(String[] args) {
 
 		// Set 계열: 순서없고 중복불가
-		HashSet<String> set1 = new HashSet<String>();
+//		HashSet<String> set1 = new HashSet<String>();
+		Set<String> set1 = new HashSet<String>();  // 다형성
 		
 		//데이터저장
 		set1.add("홍길동1");
 		set1.add("홍길동2");
+		set1.add("홍길동2");
+		set1.add("홍길동3");
 		set1.add("홍길동3");
 		
 		
