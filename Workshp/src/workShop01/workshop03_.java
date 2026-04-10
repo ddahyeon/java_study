@@ -161,6 +161,10 @@ public class workshop03_ {
 		*/
 		
 		//문제9. Scanner 클래스를 사용하여 키보드로 세 개의 정수값을 입력 받아서 최대값과 최소값을 구하는 코드 작업. 단, if 문 사용할 것
+		Scanner scan = new Scanner(System.in);
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		
 		
 		
 	}
