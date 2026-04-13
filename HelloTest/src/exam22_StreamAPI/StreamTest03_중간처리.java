@@ -2,12 +2,14 @@ package exam22_StreamAPI;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StreamTest03_중간처리 {
@@ -102,6 +104,30 @@ public class StreamTest03_중간처리 {
 		     .forEach(System.out::println);
 		
 		System.out.println("============================");
+		
+		/////////////////////////////////////////
+		/////중간처리4 - 가공 flatMap(Function<T, Stream>)
+		/// 
+		List<String> list9 = Arrays.asList("10,20,30", "40,50,60");
+		
+		Stream<String> stream9 = list9.stream();
+		
+		Function<String, IntStream> f9 = new Function<String, IntStream>() {
+			@Override
+			public IntStream apply(String s) {
+				String [] arr = s.split(","); // ["10","20","30"]
+				int [] arrNum = new int[3];  // [10,20,30]
+				for(int i=0; i< arr.length; i++) {
+					arrNum[i]=Integer.parseInt(arr[i]);
+				}
+				return Arrays.stream(arrNum);
+			}
+		};
+		IntStream is = stream9.flatMapToInt(f9);
+		is.forEach(System.out::println);
+		
+		
+		
 	}
 }
 
@@ -130,3 +156,8 @@ class Student{
 		return "Student [name=" + name + ", grade=" + grade + "]";
 	}
 }
+
+
+
+
+
