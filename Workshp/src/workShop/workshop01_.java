@@ -1,4 +1,4 @@
-package workShop01;
+package workShop;
 
 public class workshop01_ {
 

@@ -1,4 +1,4 @@
-package workShop01;
+package workShop;
 import java.util.Scanner;
 
 public class workshop02_ {
